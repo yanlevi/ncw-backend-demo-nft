@@ -8,6 +8,7 @@ export class NFTService {
     const filter = {
       ncwId: walletId,
       walletType: NFTOwnershipWalletType.END_USER_WALLET,
+      blockchainDescriptor: "ETH_TEST3",
     };
     return await this.clients.admin.getOwnedNFTs(filter);
   }
